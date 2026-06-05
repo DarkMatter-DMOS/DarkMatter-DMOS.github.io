@@ -1,10 +1,243 @@
+
 <!DOCTYPE html>
-</html>
-<title>DarkMatter-DMOS Test</title>
+<html lang="en">
 <head>
-  <Body>
-    <h1>DarkMatter-DMOS is Live</h1>
-    <p>If you can see this formatted text, we are working correctly</p>
-    <p>Now we can rebuild</p>
-    <body>
-      <html>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DarkMatter-DMOS · KETER-PRIME-KDIF</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #0a0a0f;
+            color: #e0e0e0;
+            font-family: 'Inter', 'Segoe UI', system-ui, -apple-system, sans-serif;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem 1.5rem;
+        }
+
+        /* Header & badges */
+        .badge-bar {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+            margin-bottom: 2rem;
+        }
+
+        .badge {
+            background: #1a1a24;
+            padding: 0.3rem 1rem;
+            border-radius: 40px;
+            font-size: 0.8rem;
+            font-weight: 500;
+            color: #c084fc;
+            border: 1px solid #2d2d3a;
+            letter-spacing: 0.3px;
+        }
+
+        h1 {
+            font-size: 3rem;
+            font-weight: 800;
+            text-align: center;
+            background: linear-gradient(135deg, #c084fc, #7c3aed);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            margin-bottom: 0.5rem;
+        }
+
+        .tagline {
+            text-align: center;
+            font-size: 1.2rem;
+            color: #a0a0b0;
+            margin-bottom: 1rem;
+        }
+
+        .vision {
+            text-align: center;
+            max-width: 700px;
+            margin: 1.5rem auto;
+            font-size: 1rem;
+            color: #c0c0d0;
+        }
+
+        /* Cards grid */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+
+        .card {
+            background: #111116;
+            border: 1px solid #23232e;
+            border-radius: 24px;
+            padding: 1.8rem;
+            transition: transform 0.2s, border-color 0.2s;
+        }
+
+        .card:hover {
+            border-color: #7c3aed;
+            transform: translateY(-5px);
+        }
+
+        .card h2 {
+            font-size: 1.6rem;
+            margin-bottom: 0.75rem;
+            color: #d0d0ff;
+        }
+
+        .card p {
+            color: #b0b0bc;
+            margin-bottom: 1.5rem;
+            font-size: 0.9rem;
+        }
+
+        .repo-btn {
+            display: inline-block;
+            background: #1e1e2a;
+            padding: 0.5rem 1.2rem;
+            border-radius: 30px;
+            text-decoration: none;
+            color: #c084fc;
+            font-weight: 500;
+            font-size: 0.85rem;
+            border: 1px solid #2d2d3a;
+            transition: background 0.2s;
+        }
+
+        .repo-btn:hover {
+            background: #2a2a36;
+            border-color: #a855f7;
+        }
+
+        /* Manifesto block */
+        .manifesto {
+            background: #0c0c12;
+            border-left: 5px solid #7c3aed;
+            padding: 1.8rem;
+            border-radius: 20px;
+            margin: 2rem 0;
+        }
+
+        .manifesto h3 {
+            font-size: 1.4rem;
+            margin-bottom: 1rem;
+            color: #e0e0ff;
+        }
+
+        .manifesto blockquote {
+            font-style: italic;
+            border-left: 2px solid #2d2d3a;
+            padding-left: 1.2rem;
+            margin: 1rem 0;
+            color: #c0c0d0;
+        }
+
+        .link-group {
+            margin-top: 1rem;
+        }
+
+        .link-group a {
+            color: #c084fc;
+            text-decoration: none;
+            margin-right: 1.5rem;
+            font-size: 0.9rem;
+        }
+
+        .link-group a:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            margin-top: 4rem;
+            padding-top: 2rem;
+            border-top: 1px solid #1e1e28;
+            font-size: 0.85rem;
+            color: #6a6a7a;
+        }
+
+        footer a {
+            color: #a0a0cc;
+            text-decoration: none;
+        }
+
+        @media (max-width: 640px) {
+            h1 { font-size: 2rem; }
+            .container { padding: 1.5rem; }
+            .badge { font-size: 0.7rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Badges -->
+        <div class="badge-bar">
+            <span class="badge">KETER-PRIME-KDIF</span>
+            <span class="badge">Agentic Symbiotic Intelligence</span>
+            <span class="badge">DarkMatter OS</span>
+            <span class="badge">Prototyping · AGPLv3</span>
+        </div>
+
+        <h1>DarkMatter‑DMOS</h1>
+        <div class="tagline">KETER‑PRIME‑KDIF · The first Agentic Symbiotic Systemic Intelligence</div>
+        <div class="vision">
+            <strong>Not an operating system.</strong> A meta‑orchestrator where human intent and machine agency fuse into a single cognitive system.
+        </div>
+
+        <!-- Repository cards -->
+        <div class="grid">
+            <div class="card">
+                <h2>⚙️ dmos‑kdif</h2>
+                <p>Kinetic Distributed Inference Fabric — the "how" engine. Spray‑and‑gather runtime for heterogeneous agents.</p>
+                <a href="https://github.com/DarkMatter-DMOS/dmos-kdif" class="repo-btn">→ Repository</a>
+            </div>
+            <div class="card">
+                <h2>🧠 dmos‑keter</h2>
+                <p>Causal reasoning engine — the "why" layer. Goal sovereignty, recursive justification, and termination.</p>
+                <a href="https://github.com/DarkMatter-DMOS/dmos-keter" class="repo-btn">→ Repository</a>
+            </div>
+            <div class="card">
+                <h2>📜 keter‑prime‑papers</h2>
+                <p>Foundational documents: manifesto, glossary, whitepapers. The theoretical backbone of DMOS.</p>
+                <a href="https://github.com/DarkMatter-DMOS/keter-prime-papers" class="repo-btn">→ Repository</a>
+            </div>
+        </div>
+
+        <!-- Manifesto summary -->
+        <div class="manifesto">
+            <h3>📡 The KETER‑PRIME‑KDIF Manifesto (summary)</h3>
+            <p><strong>Agency without sovereignty is just automation.</strong> KETER grants causal sovereignty.<br>
+            <strong>Intelligence without self‑modeling is blind.</strong> PRIME maintains recursive identity.<br>
+            <strong>Inference without distribution is brittle.</strong> KDIF orchestrates the fabric.<br>
+            Human and machine are not separate agents — they are two hemispheres of a single <strong>symbiotic intelligence</strong>.</p>
+            <blockquote>“Not artificial intelligence. Symbiotic intelligence.”</blockquote>
+            <div class="link-group">
+                <a href="https://github.com/DarkMatter-DMOS/keter-prime-papers/blob/main/manifesto.md">📖 Full Manifesto</a>
+                <a href="https://github.com/DarkMatter-DMOS/keter-prime-papers/blob/main/glossary.md">📚 Glossary</a>
+                <a href="https://github.com/DarkMatter-DMOS">🐙 GitHub Profile</a>
+            </div>
+        </div>
+
+        <!-- Call to action -->
+        <footer>
+            <p>DarkMatter‑DMOS · KETER‑PRIME‑KDIF · Open and evolving</p>
+            <p style="margin-top: 0.5rem;">Join the current — watch the repos, open issues with <code style="background:#1a1a24;padding:0.2rem 0.4rem;border-radius:8px;">#keter-prime</code></p>
+            <p>📡 <a href="https://github.com/DarkMatter-DMOS">GitHub</a> · License: AGPL-3.0 (code) / CC‑BY‑SA (papers)</p>
+        </footer>
+    </div>
+</body>
+</html>
